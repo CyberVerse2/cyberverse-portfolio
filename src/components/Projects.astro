@@ -10,24 +10,27 @@ const projects = await getCollection('projects', ({ data }) => {
 <section
 	data-testid="projects"
 	id="projects"
-	class="mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
+	class="mb-10 flex flex-col items-center justify-center md:mb-0 "
 >
 	<h2 class="font-monospace text-2xl text-orange lg:text-4xl">Projects</h2>
 	<span class="mb-10 h-1 w-10 bg-orange"></span>
-	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
+	<div class="mb-10 flex w-full flex-col items-center h-4/5">
 		{
 			projects.map((project) => (
 				<Card
 					url={project.data.link}
+					img={project.data.img}
 					title={project.data.title}
+					description={project.data.description}
 					alt={project.data.img_alt}
 					tags={project.data.tags}
+					live={project.data.live}
 				/>
 			))
 		}
 	</div>
 	<a
-		href="https://github.com/"
+		href="https://github.com/Cyberverse2"
 		target="_blank"
 		rel="noopener"
 		class="flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange"

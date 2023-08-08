@@ -4,8 +4,11 @@ const projectsCollection = defineCollection({
 	schema: z.object({
 		inProgress: z.boolean(),
 		title: z.string(),
+		description: z.string(),
 		tags: z.array(z.string()),
 		link: z.string(),
+		live: z.string(),
+		img: z.string(),
 		img_alt: z.string().optional(),
 	}),
 });

@@ -16,6 +16,12 @@ module.exports = {
 			black: '#000',
 			white: '#fff',
 			orange: '#E06330',
+			lightmode: 'rgba(224, 99, 48, 0.1)',
+			lightmodehover: 'rgba(224, 99, 48, 0.4)',
+			projectbg: 'rgba(224, 99, 48, 0.8)',
+
+			darkmode: 'rgba(255, 255, 255, 0.1)',
+			darkmodehover: 'rgba(255, 255, 255, 0.3)',
 		},
 		fontFamily: {
 			// Headings
